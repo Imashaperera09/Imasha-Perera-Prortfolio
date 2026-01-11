@@ -1,70 +1,79 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
         { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
         { name: 'Contact', href: '#contact' },
     ];
 
     return (
-        <nav className="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                    <div className="flex-shrink-0">
-                        <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                            Imasha.
-                        </span>
-                    </div>
-
-                    <div className="hidden md:block">
-                        <div className="ml-10 flex items-baseline space-x-8">
-                            {navLinks.map((link) => (
-                                <a
-                                    key={link.name}
-                                    href={link.href}
-                                    className="text-gray-300 hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300"
-                                >
-                                    {link.name}
-                                </a>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="md:hidden">
-                        <button
-                            onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-300 hover:text-white focus:outline-none"
-                        >
-                            {isOpen ? <X size={24} /> : <Menu size={24} />}
-                        </button>
-                    </div>
+        <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+            <motion.nav
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-full px-6 py-3 flex items-center justify-between shadow-lg w-full max-w-3xl"
+            >
+                <div className="flex-shrink-0 mr-8">
+                    <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
+                        Imasha.
+                    </span>
                 </div>
-            </div>
 
-            {/* Mobile menu */}
+                <div className="hidden md:flex items-center space-x-1">
+                    {navLinks.map((link) => (
+                        <a
+                            key={link.name}
+                            href={link.href}
+                            className="text-slate-300 hover:text-white hover:bg-slate-800 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300"
+                        >
+                            {link.name}
+                        </a>
+                    ))}
+                </div>
+
+                <div className="hidden md:block ml-4">
+                    {/* Placeholder for potential CTA or just spacing */}
+                </div>
+
+                <div className="md:hidden">
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="text-gray-300 hover:text-white focus:outline-none p-2"
+                    >
+                        {isOpen ? <X size={20} /> : <Menu size={20} />}
+                    </button>
+                </div>
+            </motion.nav>
+
+            {/* Mobile menu dropdown */}
             {isOpen && (
-                <div className="md:hidden bg-slate-900 border-b border-slate-800">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="absolute top-20 left-4 right-4 bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl md:hidden"
+                >
+                    <div className="flex flex-col space-y-2">
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                className="text-gray-300 hover:text-white hover:bg-slate-800 px-4 py-3 rounded-xl text-base font-medium transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
                             </a>
                         ))}
                     </div>
-                </div>
+                </motion.div>
             )}
-        </nav>
+        </div>
     );
 };
 

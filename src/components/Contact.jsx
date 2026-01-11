@@ -14,7 +14,7 @@ const Contact = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
-                    <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                    <div className="w-20 h-1 bg-blue-700 mx-auto rounded-full"></div>
                 </motion.div>
 
                 <div className="max-w-3xl mx-auto">
@@ -32,7 +32,7 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-white transition-all"
+                                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none text-white transition-all"
                                     placeholder="Your Name"
                                 />
                             </div>
@@ -41,7 +41,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-white transition-all"
+                                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none text-white transition-all"
                                     placeholder="your@email.com"
                                 />
                             </div>
@@ -52,7 +52,7 @@ const Contact = () => {
                             <textarea
                                 id="message"
                                 rows="4"
-                                className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-white transition-all resize-none"
+                                className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none text-white transition-all resize-none"
                                 placeholder="Your message..."
                             ></textarea>
                         </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                         <div className="text-center">
                             <button
                                 type="submit"
-                                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition-all flex items-center gap-2 mx-auto"
+                                className="px-8 py-3 bg-blue-700 hover:bg-blue-800 text-white rounded-full font-medium transition-all flex items-center gap-2 mx-auto"
                             >
                                 Send Message <Send size={20} />
                             </button>
