@@ -22,11 +22,16 @@ const About = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         viewport={{ once: true }}
+                        className="flex justify-center"
                     >
-                        <div className="aspect-square rounded-2xl overflow-hidden bg-slate-800 relative group">
-                            {/* Placeholder for image */}
-                            <div className="absolute inset-0 flex items-center justify-center text-slate-500">
-                                Profile Image Placeholder
+                        <div className="relative group w-64 h-64 md:w-80 md:h-80">
+                            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                            <div className="relative w-full h-full bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex items-center justify-center">
+                                {/* Replace src with your actual image */}
+                                <div className="text-slate-500 text-center p-4">
+                                    <p className="text-sm">Add your image here</p>
+                                    <p className="text-xs mt-2 opacity-50">(320x320px recommended)</p>
+                                </div>
                             </div>
                         </div>
                     </motion.div>
