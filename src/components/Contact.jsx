@@ -14,7 +14,7 @@ const Contact = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
-                    <div className="w-20 h-1 bg-blue-700 mx-auto rounded-full"></div>
+                    <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-900 mx-auto rounded-full"></div>
                 </motion.div>
 
                 <div className="max-w-3xl mx-auto">
@@ -60,7 +60,7 @@ const Contact = () => {
                         <div className="text-center">
                             <button
                                 type="submit"
-                                className="px-8 py-3 bg-blue-700 hover:bg-blue-800 text-white rounded-full font-medium transition-all flex items-center gap-2 mx-auto"
+                                className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white rounded-full font-medium transition-all flex items-center gap-2 mx-auto shadow-lg shadow-blue-900/20"
                             >
                                 Send Message <Send size={20} />
                             </button>

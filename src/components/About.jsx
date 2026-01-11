@@ -13,7 +13,7 @@ const About = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
-                    <div className="w-20 h-1 bg-blue-700 mx-auto rounded-full"></div>
+                    <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-900 mx-auto rounded-full"></div>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -54,12 +54,12 @@ const About = () => {
 
                         <div className="grid grid-cols-2 gap-4 pt-4">
                             <div>
-                                <h3 className="text-blue-700 font-semibold mb-1">Education</h3>
+                                <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 font-semibold mb-1">Education</h3>
                                 <p className="text-sm">BSc in Software Engineering</p>
                                 <p className="text-xs text-slate-500">CINEC Campus, 2023-2027</p>
                             </div>
                             <div>
-                                <h3 className="text-blue-700 font-semibold mb-1">Experience</h3>
+                                <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 font-semibold mb-1">Experience</h3>
                                 <p className="text-sm">Freelance Developer</p>
                                 <p className="text-xs text-slate-500">2024 - Present</p>
                             </div>
