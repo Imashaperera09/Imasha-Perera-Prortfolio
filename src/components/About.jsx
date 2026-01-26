@@ -48,7 +48,7 @@ const About = () => {
                             My journey in tech has been driven by curiosity and a desire to solve real-world problems through code.
                         </p>
                         <p className="text-lg leading-relaxed">
-                            I specialize in full-stack development, with expertise in React, Node.js, and modern CSS frameworks like Tailwind.
+
                             I am always eager to learn new technologies and improve my skills.
                         </p>
 

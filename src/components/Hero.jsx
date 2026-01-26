@@ -39,13 +39,13 @@ const Hero = () => {
 
                     {/* Social Icons */}
                     <div className="flex items-center gap-6 mb-16">
-                        <a href="#" className="p-3 bg-slate-900 rounded-xl border border-slate-800 text-slate-400 hover:text-white hover:border-blue-700 transition-all hover:-translate-y-1">
+                        <a href="https://github.com/Imashaperera09" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 rounded-xl border border-slate-800 text-slate-400 hover:text-white hover:border-blue-700 transition-all hover:-translate-y-1">
                             <Github size={24} />
                         </a>
-                        <a href="#" className="p-3 bg-slate-900 rounded-xl border border-slate-800 text-slate-400 hover:text-white hover:border-blue-700 transition-all hover:-translate-y-1">
+                        <a href="https://www.linkedin.com/in/imasha-perera-14353727b" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 rounded-xl border border-slate-800 text-slate-400 hover:text-white hover:border-blue-700 transition-all hover:-translate-y-1">
                             <Linkedin size={24} />
                         </a>
-                        <a href="mailto:contact@example.com" className="p-3 bg-slate-900 rounded-xl border border-slate-800 text-slate-400 hover:text-white hover:border-blue-700 transition-all hover:-translate-y-1">
+                        <a href="mailto:imashaperera09@gmail.com" className="p-3 bg-slate-900 rounded-xl border border-slate-800 text-slate-400 hover:text-white hover:border-blue-700 transition-all hover:-translate-y-1">
                             <Mail size={24} />
                         </a>
                     </div>
