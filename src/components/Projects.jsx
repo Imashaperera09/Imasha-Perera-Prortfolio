@@ -2,16 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 
+import solarnovaPreview from '../assets/solarnova_preview.png';
+
 const projects = [
     {
-        title: 'Project One',
-        description: 'A brief description of the project and the technologies used. Highlights key features and challenges solved.',
-        tags: ['React', 'Node.js', 'MongoDB'],
-        github: '#',
-        demo: '#',
+        title: 'SolarNova',
+        image: solarnovaPreview,
+        description: 'A comprehensive solar energy monitoring platform providing real-time insights into home energy production, consumption, and system health with anomaly detection.',
+        tags: ['React', 'Node.js', 'TypeScript', 'Express'],
+        github: [
+            { label: 'Frontend', url: 'https://github.com/Imashaperera09/fed-4-front-end' },
+            { label: 'Backend', url: 'https://github.com/Imashaperera09/FED-4-BACK-END' },
+            { label: 'Data API', url: 'https://github.com/Imashaperera09/Dataapi' }
+        ],
+        demo: 'https://fed-4-front-end.vercel.app/',
     },
     {
         title: 'Project Two',
+        image: null,
         description: 'Another amazing project showcasing frontend skills and design capabilities.',
         tags: ['Vue.js', 'Firebase', 'Tailwind'],
         github: '#',
@@ -19,6 +27,7 @@ const projects = [
     },
     {
         title: 'Project Three',
+        image: null,
         description: 'A full-stack application with authentication and real-time features.',
         tags: ['Next.js', 'PostgreSQL', 'Prisma'],
         github: '#',
@@ -52,10 +61,17 @@ const Projects = () => {
                             className="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-700 transition-all hover:-translate-y-2"
                         >
                             <div className="h-48 bg-slate-800 relative group">
-                                {/* Placeholder for project image */}
-                                <div className="absolute inset-0 flex items-center justify-center text-slate-600">
-                                    Project Image
-                                </div>
+                                {project.image ? (
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                ) : (
+                                    <div className="absolute inset-0 flex items-center justify-center text-slate-600">
+                                        Project Image
+                                    </div>
+                                )}
                             </div>
 
                             <div className="p-6">
@@ -72,10 +88,25 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div className="flex gap-4">
-                                    <a href={project.github} className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all text-sm">
-                                        <Github size={18} /> Code
-                                    </a>
+                                <div className="flex gap-4 items-center">
+                                    {Array.isArray(project.github) ? (
+                                        <div className="relative group/code">
+                                            <button className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all text-sm">
+                                                <Github size={18} /> Code
+                                            </button>
+                                            <div className="absolute bottom-full left-0 mb-2 w-40 bg-slate-900 border border-slate-800 rounded-lg shadow-xl opacity-0 invisible group-hover/code:opacity-100 group-hover/code:visible transition-all z-10">
+                                                {project.github.map((repo) => (
+                                                    <a key={repo.label} href={repo.url} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-xs text-slate-400 hover:text-white hover:bg-slate-800 first:rounded-t-lg last:rounded-b-lg">
+                                                        {repo.label}
+                                                    </a>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <a href={project.github} className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all text-sm">
+                                            <Github size={18} /> Code
+                                        </a>
+                                    )}
                                     <a href={project.demo} className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-blue-500 hover:text-blue-400 rounded-lg transition-all text-sm">
                                         <ExternalLink size={18} /> Live Demo
                                     </a>
