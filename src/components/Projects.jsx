@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 
 import solarnovaPreview from '../assets/solarnova_preview.png';
+import techstrikePreview from '../assets/techstrike_preview.png';
 
 const projects = [
     {
@@ -26,12 +27,12 @@ const projects = [
         demo: '#',
     },
     {
-        title: 'Project Three',
-        image: null,
-        description: 'A full-stack application with authentication and real-time features.',
-        tags: ['Next.js', 'PostgreSQL', 'Prisma'],
-        github: '#',
-        demo: '#',
+        title: 'Techstrike',
+        image: techstrikePreview,
+        description: 'The official website developed for the Computing Techstrike Club, serving as a central hub for club events, member resources, and tech community updates.',
+        tags: ['Next.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
+        github: 'https://github.com/Pasindumi/Techstrike_WebSite.git',
+        demo: 'https://techstrike.vercel.app/',
     },
 ];
 
