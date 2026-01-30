@@ -31,7 +31,7 @@ const projects = [
         title: 'Techstrike',
         image: techstrikePreview,
         description: 'The official website developed for the Computing Techstrike Club, serving as a central hub for club events, member resources, and tech community updates.',
-        tags: ['Next.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
+        tags: ['Next.js', 'PostgreSQL', 'Tailwind CSS'],
         github: 'https://github.com/Pasindumi/Techstrike_WebSite.git',
         demo: 'https://techstrike.vercel.app/',
     },
