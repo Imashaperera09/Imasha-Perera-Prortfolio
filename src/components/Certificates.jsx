@@ -36,7 +36,6 @@ const Certificates = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <span className="text-purple-500 font-semibold tracking-widest uppercase text-sm mb-3 block">My Achievements</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Licenses & Certifications</h2>
                     <div className="w-24 h-1.5 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full"></div>
                 </motion.div>
@@ -52,20 +51,19 @@ const Certificates = () => {
                             className="group relative bg-slate-800/40 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500/50 transition-all shadow-xl"
                         >
                             <div
-                                className="relative aspect-[16/11] bg-slate-950 flex items-center justify-center p-2 cursor-zoom-in group/img"
+                                className="relative h-[240px] md:h-[300px] bg-slate-950/80 flex items-center justify-center p-4 cursor-zoom-in group/img"
                                 onClick={() => setSelectedImg(cert.image)}
                             >
                                 <img
                                     src={cert.image}
                                     alt={cert.title}
-                                    className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700"
+                                    className="max-w-full max-h-full object-contain group-hover:scale-[1.03] transition-transform duration-700 shadow-2xl"
                                 />
-                                <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
-                                    <div className="p-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+                                <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <div className="p-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-2xl">
                                         <Maximize2 className="text-white" size={24} />
                                     </div>
                                 </div>
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent opacity-60 pointer-events-none"></div>
                             </div>
 
                             <div className="p-6 relative">
