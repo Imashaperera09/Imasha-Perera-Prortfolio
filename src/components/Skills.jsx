@@ -19,6 +19,13 @@ const skills = [
     { name: 'AWS', icon: <Cloud size={24} /> },
     { name: 'Java', icon: <Code size={24} /> },
     { name: 'C++', icon: <Code size={24} /> },
+    { name: 'Git', icon: <Code size={24} /> },
+    { name: 'MySQL', icon: <Database size={24} /> },
+    { name: 'Redux', icon: <Code size={24} /> },
+    { name: 'Figma', icon: <Globe size={24} /> },
+    { name: 'Canva', icon: <Globe size={24} /> },
+    { name: 'Jira', icon: <Server size={24} /> },
+    
 ];
 
 const Skills = () => {
@@ -36,7 +43,7 @@ const Skills = () => {
                     <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-900 mx-auto rounded-full"></div>
                 </motion.div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 xl:gap-8">
                     {skills.map((skill, index) => (
                         <motion.div
                             key={skill.name}
@@ -44,7 +51,7 @@ const Skills = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: index * 0.05 }}
                             viewport={{ once: true }}
-                            className="bg-slate-900 p-4 rounded-xl border border-slate-800 hover:border-blue-700 transition-all group flex flex-col items-center justify-center gap-3 hover:-translate-y-1"
+                            className="bg-slate-900 p-1 md:p-2 rounded-md border border-slate-800 group flex flex-col items-center justify-center gap-1 transition-all hover:-translate-y-1 outline outline-1 outline-blue-600/40 hover:outline-blue-500 w-32 h-20 md:w-36 md:h-24 xl:w-40 xl:h-28"
                         >
                             <div className="p-2 bg-slate-800 rounded-lg text-slate-400 group-hover:text-blue-500 transition-colors">
                                 {React.cloneElement(skill.icon, { size: 20 })}

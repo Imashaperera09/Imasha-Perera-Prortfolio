@@ -27,11 +27,11 @@ const About = () => {
                         <div className="relative group w-64 h-64 md:w-80 md:h-80">
                             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                             <div className="relative w-full h-full bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex items-center justify-center">
-                                {/* Replace src with your actual image */}
-                                <div className="text-slate-500 text-center p-4">
-                                    <p className="text-sm">Add your image here</p>
-                                    <p className="text-xs mt-2 opacity-50">(320x320px recommended)</p>
-                                </div>
+                                <img
+                                    src="/src/assets/ima.jpeg"
+                                    alt="Imasha"
+                                    className="w-full h-full object-cover shadow-lg border-4 border-blue-600"
+                                />
                             </div>
                         </div>
                     </motion.div>
@@ -44,12 +44,7 @@ const About = () => {
                         className="text-slate-300 space-y-6"
                     >
                         <p className="text-lg leading-relaxed">
-                            I am a dedicated Software Engineering Undergraduate with a strong passion for building innovative web solutions.
-                            My journey in tech has been driven by curiosity and a desire to solve real-world problems through code.
-                        </p>
-                        <p className="text-lg leading-relaxed">
-
-                            I am always eager to learn new technologies and improve my skills.
+                            I am a Software Engineering undergraduate who enjoys building user-friendly, scalable solutions with modern technologies. I am always eager to learn, solve problems, and grow through hands-on projects and teamwork.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 pt-4">
