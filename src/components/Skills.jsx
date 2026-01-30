@@ -53,7 +53,6 @@ const skillCategories = [
             { name: 'Git', icon: <GitBranch size={16} /> },
             { name: 'GitHub', icon: <GitBranch size={16} /> },
             { name: 'Figma', icon: <Figma size={16} /> },
-            { name: 'VS Code', icon: <Code size={16} /> },
             { name: 'Jira', icon: <Briefcase size={16} /> },
         ]
     },
