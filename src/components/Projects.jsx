@@ -4,6 +4,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 import solarnovaPreview from '../assets/solarnova_preview.png';
 import techstrikePreview from '../assets/techstrike_preview.png';
+import smartleavePreview from '../assets/smartleave_preview.png';
 
 const projects = [
     {
@@ -19,12 +20,12 @@ const projects = [
         demo: 'https://fed-4-front-end.vercel.app/',
     },
     {
-        title: 'Project Two',
-        image: null,
-        description: 'Another amazing project showcasing frontend skills and design capabilities.',
-        tags: ['Vue.js', 'Firebase', 'Tailwind'],
-        github: '#',
-        demo: '#',
+        title: 'Smart Leave - Permission Management System',
+        image: smartleavePreview,
+        description: 'A modern, efficient way to track, request, and approve leaves within an organization with real-time balance updates and role-based workflows.',
+        tags: ['React', '.NET Core API', 'Supabase', 'PostgreSQL'],
+        github: 'https://github.com/Imashaperera09/Smart_Permission_Management_System_',
+        demo: 'https://smart-permission-management-system-8s9r8osb1.vercel.app/',
     },
     {
         title: 'Techstrike',
