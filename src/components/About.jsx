@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Briefcase, Target, Code2, Award, Sparkles } from 'lucide-react';
+import profileImg from '../assets/ima.jpeg';
 
 const About = () => {
     const infoCards = [
@@ -51,7 +52,7 @@ const About = () => {
 
                             <div className="relative z-10 w-72 h-80 md:w-80 md:h-[400px] rounded-2xl overflow-hidden border-4 border-slate-900 shadow-2xl">
                                 <img
-                                    src="/src/assets/ima.jpeg"
+                                    src={profileImg}
                                     alt="Imasha"
                                     className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-110"
                                 />
