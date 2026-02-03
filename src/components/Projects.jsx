@@ -1,3 +1,4 @@
+// Portfolio Projects Component - Updated Feb 3, 2026
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
