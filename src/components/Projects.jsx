@@ -34,7 +34,7 @@ const projects = [
         image: cognitoHubPreview,
         description: 'Developed an autonomous multi-agent system using LangGraph to orchestrate specialized agents for deep-dive research, data synthesis, and automated analysis. Integrated Groq (Llama 3.3) and Tavily API to deliver high-speed, real-time web intelligence and future-proof strategic recommendations for any research topic.',
         tags: ['Python', 'FastAPI', 'LangGraph', 'LangChain', 'Groq', 'Tavily API'],
-        github: 'https://github.com/Imashaperera09/multi-agent.git',
+        github: 'https://github.com/Imashaperera09/multi-agent',
         demo: 'https://multi-agent-dun.vercel.app/',
     },
     {
@@ -115,11 +115,11 @@ const Projects = () => {
                                             </div>
                                         </div>
                                     ) : (
-                                        <a href={project.github} className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all text-sm">
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all text-sm">
                                             <Github size={18} /> Code
                                         </a>
                                     )}
-                                    <a href={project.demo} className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-blue-500 hover:text-blue-400 rounded-lg transition-all text-sm">
+                                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-blue-500 hover:text-blue-400 rounded-lg transition-all text-sm">
                                         <ExternalLink size={18} /> Live Demo
                                     </a>
                                 </div>
