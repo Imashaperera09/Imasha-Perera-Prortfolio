@@ -34,7 +34,7 @@ const projects = [
         image: cognitoHubPreview,
         description: 'Developed an autonomous multi-agent system using LangGraph to orchestrate specialized agents for deep-dive research, data synthesis, and automated analysis. Integrated Groq (Llama 3.3) and Tavily API to deliver high-speed, real-time web intelligence and future-proof strategic recommendations for any research topic.',
         tags: ['Python', 'FastAPI', 'LangGraph', 'LangChain', 'Groq', 'Tavily API'],
-        github: 'https://github.com/Imashaperera09',
+        github: 'https://github.com/Imashaperera09/multi-agent.git',
         demo: 'https://multi-agent-dun.vercel.app/',
     },
     {
