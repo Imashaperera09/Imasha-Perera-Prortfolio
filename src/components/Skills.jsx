@@ -13,7 +13,7 @@ const skillCategories = [
         skills: [
             { name: 'Java', icon: <Code size={16} /> },
             { name: 'HTML', icon: <FileCode size={16} /> },
-            { name: 'CSS', icon: <Layout size={16} /> },
+            { name: 'CSS3', icon: <Layout size={16} /> },
             { name: 'JavaScript', icon: <Terminal size={16} /> },
             { name: 'Python', icon: <Terminal size={16} /> },
             { name: 'PHP', icon: <FileCode size={16} /> },
@@ -32,7 +32,16 @@ const skillCategories = [
             { name: 'Flutter', icon: <Smartphone size={16} /> },
             { name: '.NET', icon: <Cpu size={16} /> },
             { name: 'Tailwind CSS', icon: <Layers size={16} /> },
-
+            { name: 'FastAPI', icon: <Zap size={16} /> },
+        ]
+    },
+    {
+        title: 'AI & Agent Orchestration',
+        skills: [
+            { name: 'LangGraph', icon: <Layers size={16} /> },
+            { name: 'LangChain', icon: <Box size={16} /> },
+            { name: 'Groq (Llama 3.3)', icon: <Cpu size={16} /> },
+            { name: 'Tavily API', icon: <Globe size={16} /> },
         ]
     },
     {
