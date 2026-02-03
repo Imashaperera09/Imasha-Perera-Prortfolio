@@ -5,6 +5,7 @@ import { Github, ExternalLink } from 'lucide-react';
 import solarnovaPreview from '../assets/solarnova_preview.png';
 import techstrikePreview from '../assets/techstrike_preview.png';
 import smartleavePreview from '../assets/smartleave_preview.png';
+import cognitoHubPreview from '../assets/cognito_hub.png';
 
 const projects = [
     {
@@ -26,6 +27,14 @@ const projects = [
         tags: ['React', '.NET Core API', 'Supabase', 'PostgreSQL'],
         github: 'https://github.com/Imashaperera09/Smart_Permission_Management_System_',
         demo: 'https://smart-permission-management-system-8s9r8osb1.vercel.app/',
+    },
+    {
+        title: 'Cognito Hub: Strategic Research Engine',
+        image: cognitoHubPreview,
+        description: 'Developed an autonomous multi-agent system using LangGraph to orchestrate specialized agents for deep-dive research, data synthesis, and automated analysis. Integrated Groq (Llama 3.3) and Tavily API to deliver high-speed, real-time web intelligence and future-proof strategic recommendations for any research topic.',
+        tags: ['Python', 'FastAPI', 'LangGraph', 'LangChain', 'Groq', 'Tavily API'],
+        github: 'https://github.com/Imashaperera09',
+        demo: 'https://multi-agent-dun.vercel.app/',
     },
     {
         title: 'Techstrike',
