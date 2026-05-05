@@ -4,8 +4,15 @@ import { Award, ExternalLink, X, Maximize2 } from 'lucide-react';
 
 import c1 from '../assets/c1.jpg';
 import c2 from '../assets/c2.jpg';
+import c3 from '../assets/c3.png';
 
 const certificates = [
+    {
+        title: 'Distinction in Artificial Intelligence',
+        issuer: 'Informatics Institute of Technology (IIT)',
+        image: c3,
+        description: 'Successfully completed the three-month professional certificate programme in Artificial Intelligence conducted by the Professional Development Unit of IIT, achieving a Distinction grade.'
+    },
     {
         title: 'Comprehensive Master Java Developer (CMJD)',
         issuer: 'IJSE-Institute of Software Engineering',
